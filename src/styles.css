@@ -1,0 +1,78 @@
+/* Estilo Global */
+body {
+  background-color: #000; /* Cor de fundo preto para toda a página */
+  color: #fff; /* Cor do texto padrão como branco */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+p,
+li {
+  font-weight: 400;
+}
+
+/* Estilo da Barra de Navegação */
+.navbar {
+  display: flex; /* Exibe os itens em linha */
+  align-items: center; /* Alinha verticalmente no centro */
+  background-color: #1a1a1a; /* Cor de fundo */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: fixed; /* Fixa no topo */
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+}
+
+/* Ajuste da logo */
+.logo {
+  width: 80px; /* Define um tamanho fixo adequado */
+  height: auto; /* Mantém a proporção da logo */
+  margin-right: 20px; /* Espaço à direita da logo */
+}
+
+/* Estilo dos links de navegação */
+.nav-links {
+  display: flex; /* Exibe os links em linha */
+  list-style: none;
+  gap: 20px; /* Espaçamento entre os links */
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #00ffcc; /* Efeito hover */
+  transition: color 0.3s ease;
+}
+
+/* Adicionar padding-top para compensar a barra fixa */
+.App {
+  padding-top: 70px; /* Compensa a barra fixa */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Muda para coluna em telas pequenas */
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Alinha os links verticalmente */
+    gap: 10px; /* Menor espaço entre os links */
+    width: 100%;
+  }
+
+  .logo {
+    width: 60px; /* Tamanho menor para telas pequenas */
+  }
+}

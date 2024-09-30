@@ -1,0 +1,27 @@
+.contato {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contato h1 {
+  font-size: 42px;
+  color: #00ffcc;
+}
+
+.contato ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contato li {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.contato li:hover {
+  color: #00ffcc;
+  transition: color 0.3s ease;
+}
